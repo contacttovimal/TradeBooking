@@ -89,6 +89,8 @@ public abstract class BaseOrder implements Comparable<BaseOrder> {
         this.orderStatus.set(status);
     }
 
+    public int getLotSize(){return this.lotSize;}
+
     @Override
     public String toString() {
         String counterPartyName = counterParty == null ? "NA" : counterParty.getName();

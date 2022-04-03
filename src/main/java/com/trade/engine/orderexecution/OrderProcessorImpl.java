@@ -223,7 +223,7 @@ public class OrderProcessorImpl implements OrderProcessor {
     }
 
     private boolean validateOrder(BaseOrder order) {
-        return order.lotSize == 100;
+        return order.getLotSize() == 100;
     }
 
     private boolean isActive() {
